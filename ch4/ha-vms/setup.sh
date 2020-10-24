@@ -1,3 +1,3 @@
 #!/bin/bash
-
-sed -i -e 's/SERVER_HOSTNAME/$(hostname)/g' index.html
+hostname=$(echo $(hostname))
+sed -i -e 's/SERVER_HOSTNAME/'$hostname'/g' index.html
