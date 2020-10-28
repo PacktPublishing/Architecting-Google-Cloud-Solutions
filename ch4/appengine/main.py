@@ -10,11 +10,14 @@ app = Flask(__name__)
 runtime = os.environ['GAE_RUNTIME']
 env = os.environ['GAE_ENV']
 instance = os.environ['GAE_INSTANCE']
+app_file = open('app.yaml', 'r')
+app_content = app_file.read()
+app_file.close()
 
 @app.route('/')
 def hello():
     """Return some very basic HTML"""
-    return f'<h>Hello There!</h><br/><br/><p>My instance id is <b>{instance}</b> and I am running on <b>{env}</b> environment. My Runtime is <b>{runtime}</b></p>'
+    return f'<h1>Hello There!</h1><br/><br/><p>My instance id is <b>{instance}</b>.</p><br/><p>I am running on <b>{env}</b> environment. My Runtime is <b>{runtime}</b>.</p><p>Here is the content of my app.yaml: <br/><br/><i>{app_content}</i>'
 
 
 if __name__ == '__main__':
