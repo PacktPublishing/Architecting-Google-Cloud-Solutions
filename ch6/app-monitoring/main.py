@@ -3,7 +3,6 @@ from flask import Flask
 from multiprocessing import Pool
 from multiprocessing import cpu_count
 
-import signal
 import os
 import random
 
