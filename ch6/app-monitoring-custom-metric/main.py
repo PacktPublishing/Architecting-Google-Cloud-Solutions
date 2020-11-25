@@ -7,7 +7,8 @@ from custom_metric import *
 import os
 import random
 
-    
+PROJECT_ID = os.environ["PROJECT_ID"]
+
 # If `entrypoint` is not defined in app.yaml, App Engine will look for an app
 # called `app` in `main.py`.
 app = Flask(__name__)
@@ -74,5 +75,6 @@ if __name__ == '__main__':
     # The localhost IP and port configured here are used when running locally only. 
     # When deploying to Google App Engine, a webserver process (Gunicorn) will serve 
     # the app on regular HTTP(S) port. 
-    app.run(host='127.0.0.1', port=5010, debug=True)
+    create_metric_descriptor(PROJECT_ID)
+    app.run(host='127.0.0.1', port=5012, debug=True)
 # [END gae_python38_app]
