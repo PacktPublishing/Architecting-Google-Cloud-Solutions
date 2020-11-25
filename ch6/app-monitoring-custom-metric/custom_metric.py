@@ -8,7 +8,7 @@ from google.cloud import monitoring_v3
 
 PROJECT_ID = os.environ["PROJECT_ID"]
 UNIQUE_ID = str(uuid.uuid4())
-CUSTOM_METRIC_NAME_PREFIX = "num_of_pets_"
+CUSTOM_METRIC_NAME_PREFIX = "pets_requested_"
 
 def create_metric_descriptor(project_id):
     # [START monitoring_create_metric]
@@ -17,7 +17,7 @@ def create_metric_descriptor(project_id):
     project_name = f"projects/{project_id}"
     descriptor = ga_metric.MetricDescriptor()
     descriptor.type = "custom.googleapis.com/" + CUSTOM_METRIC_NAME_PREFIX + UNIQUE_ID
-    descriptor.display_name = "NUM_OF_PETS"
+    descriptor.display_name = "PETS_REQUESTED"
     descriptor.metric_kind = ga_metric.MetricDescriptor.MetricKind.GAUGE
     descriptor.value_type = ga_metric.MetricDescriptor.ValueType.INT64
     descriptor.unit = "1"
