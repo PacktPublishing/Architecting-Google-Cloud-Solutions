@@ -25,6 +25,7 @@ import argparse
 import datetime
 import os
 import time
+import json
 
 import jwt
 import paho.mqtt.client as mqtt
@@ -191,14 +192,14 @@ def main():
     for i in range(1, args.num_messages + 1):
 
         simulated_temp = simulated_temp + temperature_trend * random.normalvariate(0.01,0.005)
-        payload = '{}/{}-payload-{:.2f}'.format(
-                args.registry_id, args.device_id, simulated_temp)
-        print('Publishing message {}/{}: \'{}\''.format(
+        payload = {"timestamp": int(time.time()), "device": args.device_id, "temperature": simulated_temp}
+        print('Publishing message {} of {}: \'{}\''.format(
                 i, args.num_messages, payload))
-        # Publish "payload" to the MQTT topic. qos=1 means at least once
+        jsonpayload =  json.dumps(payload,indent=4)
+        # Publish "jsonpayload" to the MQTT topic. qos=1 means at least once
         # delivery. Cloud IoT Core also supports qos=0 for at most once
         # delivery.
-        client.publish(mqtt_topic, payload, qos=1)
+        client.publish(mqtt_topic, jsonpayload, qos=1)
 
         # Send events every second. State should not be updated as often
         time.sleep(1 if args.message_type == 'event' else 5)
