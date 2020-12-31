@@ -1,0 +1,10 @@
+imports:
+- path: instance-template.jinja
+resources:
+- name: testvm-03
+  type: instance-template.jinja
+  properties:
+    name: testvm-03
+    project_id: chapter-9-300213
+    machineType: n1-standard
+    network: default

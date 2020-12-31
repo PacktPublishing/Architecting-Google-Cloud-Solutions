@@ -1,0 +1,8 @@
+runtime: python38
+
+instance_class: F2
+
+env_variables:
+  MY_CUSTOM_ENV_VAR: "https://upload.wikimedia.org/wikipedia/commons/8/86/Cat_yawning_in_park.jpg"
+
+
