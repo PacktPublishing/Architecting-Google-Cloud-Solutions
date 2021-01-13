@@ -6,19 +6,6 @@ app = Flask(__name__)
 with open('data/orders.json') as f:
     orders = json.load(f)
 
-with open('data/products.json') as f:
-    products = json.load(f)
-
-@app.route('/')
-def hello():
-    """Return some very basic HTML"""
-    return f'<h1>Hello There!</h1>'
-
-@app.route('/products')
-def get_products():
-    """Return all products"""
-    return json.dumps(products, indent = 4)   
-
 @app.route('/orders')
 def get_orders():
     """Return all orders"""
@@ -28,13 +15,6 @@ def get_orders():
 def get_order(order_id):
     """Return all orders"""
     return json.dumps([order for order in orders['orders'] if order['id'] == str(order_id)], indent = 4)   
-
-@app.route('/products/<int:product_id>')
-def get_product(product_id):
-    """Return all orders"""
-    return json.dumps([product for product in products['products'] if product['id'] == str(product_id)], indent = 4)   
-
-
     
 
 if __name__ == '__main__':
