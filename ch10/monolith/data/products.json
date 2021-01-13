@@ -1,0 +1,39 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "name": "Pride and Prejudice",
+            "description": "Book Pride and Prejudice by Jane Austen (1813)",
+            "cost": 9.99,
+            "category": "classic"
+        },
+        {
+            "id": "2",
+            "name": "To Kill a Mockingbird",
+            "description": "Book To Kill a Mockingbird by Harper Lee (1960)",
+            "cost": 12.49,
+            "category": "classic"
+        },
+        {
+            "id": "3",
+            "name": "The Great Gatsby",
+            "description": "Book The Great Gatsby by F. Scott Fitzgerald (1925)",
+            "cost": 11.89,
+            "category": "classic"
+        },
+        {
+            "id": "4",
+            "name": "Dune",
+            "description": "Book Dune by Frank Herbert (1965)",
+            "cost": 15.45,
+            "category": "scifi"
+        },
+        {
+            "id": "5",
+            "name": "The Time Machine",
+            "description": "Book The Time Machine by H. G. Wells (1895)",
+            "cost": 9.99,
+            "category": "scifi"
+        }
+    ]
+}
