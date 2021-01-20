@@ -2,7 +2,7 @@
 
 ## Design Diagram
 
-[IMAGE]
+![Design Diagram](https://raw.githubusercontent.com/PacktPublishing/Architecting-Google-Cloud-Solutions/master/ch10/case-study/hld.jpg)
 
 ## Explanation
 Currently, the application is a *monolithic* e-commerce web/mobile app. The following challenges were identified:
