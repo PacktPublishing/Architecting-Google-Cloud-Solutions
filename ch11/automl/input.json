@@ -1,0 +1,24 @@
+{
+  "instances": [
+  	{ 
+  		"initial_price": "2290000", 
+  		"location": "Stureby", 
+  		"street_name": "Bjulevägen", 
+  		"num_of_rooms": "3.0", 
+  		"size": "42", 
+  		"sold_year": "2020", 
+  		"floor_num": "5", 
+  		"year_built": "1998" 
+  	},
+  	{ 
+  		"initial_price": "3450000", 
+  		"location": "Vasastan", 
+  		"street_name": "Torsgatan", 
+  		"num_of_rooms": "2.0", 
+  		"size": "38", 
+  		"sold_year": "2020", 
+  		"floor_num": "2", 
+  		"year_built": "1990" 
+  	}
+  ]
+}
