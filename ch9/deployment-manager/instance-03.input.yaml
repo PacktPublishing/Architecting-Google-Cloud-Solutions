@@ -5,5 +5,5 @@ resources:
   type: instance-template.jinja
   properties:
     name: testvm-03
-    machineType: n1-standard
+    machineType: n1-standard-1
     network: default
