@@ -5,6 +5,5 @@ resources:
   type: instance-template.jinja
   properties:
     name: testvm-02
-    project_id: chapter-9-300213
     machineType: f1-micro
     network: default
