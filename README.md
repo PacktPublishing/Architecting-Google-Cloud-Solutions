@@ -41,10 +41,10 @@ With the following software and hardware list you can run all code files present
 
 | Chapter  | Software required                            | OS required                        |
 | -------- | ---------------------------------------------| -----------------------------------|
-| 1-12     | Any of the latest versions of Google Chrome, | Windows, macOS, and Linux (Any)    |
-             Mozilla Firefox,Microsoft Edge, 
-             Microsoft Internet Explorer 11+ and Apple Safari 8+.
-             Safari in private browser mode is not supported.                       
+| 1-12     | Any of the latest versions of Google Chrome, Mozilla Firefox,Microsoft Edge, Microsoft Internet Explorer 11+ and Apple Safari 8+. Safari in private browser mode is not supported.  | Windows, macOS, and Linux (Any)    |
+              
+            
+                                   
              
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](http://www.packtpub.com/sites/default/files/downloads/9781800563308_ColorImages.pdf).
 
