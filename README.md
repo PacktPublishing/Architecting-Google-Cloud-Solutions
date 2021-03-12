@@ -41,7 +41,7 @@ With the following software and hardware list you can run all code files present
 
 | Chapter  | Software required                            | OS required                        |
 | -------- | ---------------------------------------------| -----------------------------------|
-| 1-12     | Any of the latest versions of Google Chrome, Mozilla Firefox,Microsoft Edge, Microsoft Internet Explorer 11+ and Apple Safari 8+. Safari in private browser mode is not supported.  | Windows, macOS, and Linux (Any)    |
+| 1-12     | Any of the latest versions of Google Chrome, Mozilla Firefox, Microsoft Edge, Microsoft Internet Explorer 11+ and Apple Safari 8+. Safari in private browser mode is not supported.  | Windows, macOS, and Linux (Any)    |
               
             
                                    
