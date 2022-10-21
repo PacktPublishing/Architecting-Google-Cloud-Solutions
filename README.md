@@ -61,3 +61,7 @@ Click on the following link to see the Code in Action:
 
 ## Get to Know the Author
 **Victor Dantas** has a PhD in software-defined networking and cloud systems and is a solutions architect currently working at AWS. He has professional cloud certifications from Google Cloud, Azure, and AWS. With a background ranging from software development and systems engineering to technology consulting, he has accumulated experience in software engineering, cloud migrations, hybrid cloud infrastructure, cloud solutions architecture, and Agile/DevOps practices working with organizations of all sizes. Victor also writes practical guides and labs on cloud computing for Pluralsight. Beyond the cloud, his interests include big data, AI / Machine Learning, and the Internet-of-Things (IoT).
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781800563308">https://packt.link/free-ebook/9781800563308 </a> </p>
